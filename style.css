@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #265a64;
+}
+
+.calc {
+    border: 2px solid #dedede;
+    border-radius: 8px;
+    width: 300px;
+    background-color: #8c8888;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input input {
+    position: relative;
+    right: 5px;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: right;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.buttons button {
+    font-size: 1em;
+    padding: 15px; /* Increased padding for better visibility and touch-friendly */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #e1e1e1;
+}
+
+/* Adjust styling for the last two buttons */
+.buttons button:last-child {
+    grid-column: span 3; /* Make the last button span two columns */
+    background-color: #ff6f6f; /* A different background color for the last button */
+    color: #fff; /* Text color for better contrast */
+}
+
+.buttons button:last-child:hover {
+    background-color: #e74c4c; /* Hover effect for the last button */
+}
